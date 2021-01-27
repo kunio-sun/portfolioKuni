@@ -60,7 +60,8 @@ let topSec = document.getElementById('topSec').getBoundingClientRect().y + windo
 let portfolioSec = document.getElementById('portfolioSec').getBoundingClientRect().y + window.pageYOffset
 let projectSec = document.getElementById('projectSec').getBoundingClientRect().y + window.pageYOffset
 let contactSec = document.getElementById('contactSec').getBoundingClientRect().y + window.pageYOffset
-// console.log(topSec, portfolioSec, projectSec, contactSec)
+console.log(topSec, portfolioSec, projectSec, contactSec)
+
 // ウィンドウサイズ変更時距離を再代入
 let timeoutID;
 window.addEventListener('resize', () => {
@@ -77,7 +78,7 @@ window.addEventListener('resize', () => {
     portfolioSec = document.getElementById('portfolioSec').getBoundingClientRect().y + window.pageYOffset
     projectSec = document.getElementById('projectSec').getBoundingClientRect().y + window.pageYOffset
     contactSec = document.getElementById('contactSec').getBoundingClientRect().y + window.pageYOffset
-    // console.log(topSec, portfolioSec, projectSec, contactSec)
+    console.log(topSec, portfolioSec, projectSec, contactSec)
   }, 300)
 })
 
@@ -87,14 +88,18 @@ let scrollY;
 window.addEventListener('scroll', () => {
   scrollY = window.scrollY
   const linkPointer = document.getElementById("linkPointer");
+  console.log("いま", scrollY)
+  console.log("ポートフォリオ", portfolioSec)
+  console.log("プロジェクト", projectSec)
+  console.log("コンタクト", contactSec)
   // focus トップ（プロフィール）セクション
   if (scrollY < portfolioSec) {
-    // console.log("top");
     linkPointer.style.top = 0;
+    // console.log("top");
     return;
   }
   //focus ポートフォリオセクション
-  if (scrollY < projectSec - 1) {
+  if (scrollY < projectSec) {
     // console.log("portfolio");
     linkPointer.style.top = "33%";
     return;
@@ -159,14 +164,14 @@ topScrollNext.addEventListener('click', () => {
 const portfolioLink = document.getElementById("portfolioLink");
 portfolioLink.addEventListener('click', () => {
   window.scrollTo({
-    top: portfolioSec,
+    top: portfolioSec + 1,
     behavior: "smooth"
   });
 })
 const topLinkToPortfolio = document.getElementById("topLinkToPortfolio");
 topLinkToPortfolio.addEventListener('click', () => {
   window.scrollTo({
-    top: portfolioSec,
+    top: portfolioSec + 1,
     behavior: "smooth"
   })
 })
@@ -175,14 +180,14 @@ topLinkToPortfolio.addEventListener('click', () => {
 const projectLink = document.getElementById("projectLink");
 projectLink.addEventListener('click', () => {
   window.scrollTo({
-    top: projectSec,
+    top: projectSec + 1,
     behavior: "smooth"
   });
 })
 const topLinkToProject = document.getElementById("topLinkToProject");
 topLinkToProject.addEventListener('click', () => {
   window.scrollTo({
-    top: projectSec,
+    top: projectSec + 1,
     behavior: "smooth"
   })
 })

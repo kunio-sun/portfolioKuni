@@ -291,6 +291,7 @@ main {
     & section {
       box-sizing: border-box;
       padding: 5vh 0;
+      min-height: 100vh;
     }
     & .partition {
       position: relative;
