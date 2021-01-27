@@ -98,6 +98,9 @@ $breakpoint-down: (
 html {
   font-size: 62.5%;
 }
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
 $screenMargin-lr: 3vw;
 $screenMargin-tb: 3vh;
 // 共有--
@@ -1082,7 +1085,7 @@ $d-accent: #1e8613;
   }
   & .header_back {
     background-color: $d-base;
-    box-shadow: 2px 2px 4px $d-middle;
+    box-shadow: 0px 0px 4px $d-middle;
     & .header_back_wrap {
       color: $d-base;
       text-shadow: 2px 2px 4px $d-middle;

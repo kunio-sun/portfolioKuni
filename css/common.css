@@ -65,6 +65,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 .secHead {
   position: relative;
   width: 240px;
@@ -1280,8 +1284,8 @@ body {
 
 .dark-theme .header_back {
   background-color: #333;
-  -webkit-box-shadow: 2px 2px 4px #555;
-          box-shadow: 2px 2px 4px #555;
+  -webkit-box-shadow: 0px 0px 4px #555;
+          box-shadow: 0px 0px 4px #555;
 }
 
 .dark-theme .header_back .header_back_wrap {
