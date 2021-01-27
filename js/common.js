@@ -217,10 +217,10 @@ const transition = (goTo) => {
 }
 
 document.getElementById("portfolio_design").addEventListener('click', () => {
-  transition("../galleryDesign.html");
+  transition("./galleryDesign.html");
 })
 document.getElementById("portfolio_addobe").addEventListener('click', () => {
-  transition("../galleryAddobe.html");
+  transition("./galleryAddobe.html");
 })
 
 
