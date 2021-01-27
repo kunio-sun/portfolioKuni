@@ -126,14 +126,14 @@ scrollTopKuni.addEventListener('click', () => {
     behavior: "smooth"
   });
 })
-const scrollTopheader = document.getElementById("scrollTopheader");
-scrollTopheader.addEventListener('click', () => {
-  console.log("click top")
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-})
+// const scrollTopheader = document.getElementById("scrollTopheader");
+// scrollTopheader.addEventListener('click', () => {
+//   console.log("click top")
+//   window.scrollTo({
+//     top: 0,
+//     behavior: "smooth"
+//   });
+// })
 const topLink = document.getElementById("topLink");
 topLink.addEventListener('click', () => {
   window.scrollTo({

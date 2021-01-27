@@ -284,12 +284,6 @@ html {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .pageHead {
-    top: 120px;
-  }
-}
-
 @media screen and (min-width: 1000px) {
   .pageHead {
     left: 16px;
@@ -893,9 +887,9 @@ header.menu-close span:nth-child(3) {
   display: none;
   position: fixed;
   z-index: 5;
-  left: 0;
+  right: 0;
   top: 0;
-  width: 100%;
+  width: 80px;
   height: 80px;
   -webkit-box-shadow: 2px 4px 8px;
           box-shadow: 2px 4px 8px;
@@ -1267,9 +1261,9 @@ body {
 .dark-theme .button {
   border-color: #eee;
   color: #eee;
-  border: 1px solid rgba(125, 45, 167, 0.8);
-  -webkit-box-shadow: 0px 0px 6px #7d2da7;
-          box-shadow: 0px 0px 6px #7d2da7;
+  border: 1px solid rgba(30, 134, 19, 0.8);
+  -webkit-box-shadow: 0px 0px 6px #1e8613;
+          box-shadow: 0px 0px 6px #1e8613;
 }
 
 .dark-theme .secHead span:nth-child(1) {
@@ -1314,9 +1308,9 @@ body {
 }
 
 .dark-theme nav .navWrap .linkList .linkMap .linkPointer {
-  background-color: #7d2da7;
-  -webkit-box-shadow: 0px 0px 12px #7d2da7;
-          box-shadow: 0px 0px 12px #7d2da7;
+  background-color: #1e8613;
+  -webkit-box-shadow: 0px 0px 12px #1e8613;
+          box-shadow: 0px 0px 12px #1e8613;
 }
 
 .dark-theme main .mainWrap .partition {
@@ -1328,9 +1322,9 @@ body {
 }
 
 .dark-theme main .mainWrap #topSec .top_prof > ul li::before {
-  background-color: #7d2da7;
-  -webkit-box-shadow: 0 0 8px #7d2da7;
-          box-shadow: 0 0 8px #7d2da7;
+  background-color: #1e8613;
+  -webkit-box-shadow: 0 0 8px #1e8613;
+          box-shadow: 0 0 8px #1e8613;
 }
 
 .dark-theme main .mainWrap #portfolioSec .portfolioWrap .portfolio_galleryWrap a span {
@@ -1338,8 +1332,8 @@ body {
 }
 
 .dark-theme main .mainWrap #portfolioSec .portfolioWrap .portfolio_galleryWrap a::after {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(228, 228, 228, 0)), color-stop(90%, #7d2da7));
-  background: linear-gradient(90deg, rgba(228, 228, 228, 0) 0%, #7d2da7 90%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(228, 228, 228, 0)), color-stop(90%, #1e8613));
+  background: linear-gradient(90deg, rgba(228, 228, 228, 0) 0%, #1e8613 90%);
 }
 
 .dark-theme main .mainWrap #projectSec .project_detail .project_slide > span {

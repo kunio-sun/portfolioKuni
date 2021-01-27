@@ -257,9 +257,9 @@ $screenMargin-tb: 3vh;
   @include mq-down("800") {
     position: absolute;
   }
-  @include mq-down("600") {
-    top: 120px;
-  }
+  // @include mq-down("600") {
+  //   top: 120px;
+  // }
   @include mq-up("1000") {
     left: 16px;
   }
@@ -724,9 +724,10 @@ header {
   display: none;
   position: fixed;
   z-index: 5;
-  left: 0;
+  right: 0;
   top: 0;
-  width: 100%;
+  // width: 100%;
+  width: 80px;
   height: 80px;
   box-shadow: 2px 4px 8px;
   & .header_back_wrap {
@@ -1056,7 +1057,7 @@ $d-middle: #555;
 $d-main: #707070;
 $d-gray: #ccc;
 $d-font: #eee;
-$d-accent: #7d2da7;
+$d-accent: #1e8613;
 .dark-theme {
   background-color: $d-base;
   color: $d-font;
