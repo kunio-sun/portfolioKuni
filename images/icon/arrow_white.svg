@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.061" height="12.987" viewBox="0 0 20.061 12.987">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g id="arrow_white" transform="translate(-825.381 -688.381)">
+    <line id="線_2" data-name="線 2" class="cls-1" x2="7.912" y2="8.75" transform="translate(827.5 690.5)"/>
+    <line id="線_3" data-name="線 3" class="cls-1" x1="7.912" y2="8.75" transform="translate(835.412 690.5)"/>
+  </g>
+</svg>

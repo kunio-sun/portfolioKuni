@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KuniakiPortfolio</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+</head>
+
+<body class="light-theme">
+
+  <!-- loading画面 -->
+  <div id="loading">
+    <div class="loading_text">
+      <span>L</span>
+      <span>O</span>
+      <span>A</span>
+      <span>D</span>
+      <span>I</span>
+      <span>N</span>
+      <span>G</span>
+    </div>
+  </div>
+
+  <!-- 画面遷移サークル -->
+  <div id="transition-circle"></div>
+
+
+  <!-- 画面左上kuniaki -->
+  <div class="pageHead" id="scrollTopKuni">
+    <h1 class="head-big">
+      K<br>U<br>N<br>I<br>A<br>K<br>I
+    </h1>
+    <p class="head-mini">
+      uniaki
+    </p>
+  </div>
+
+
+  <!-- スマホサイズ表示header -->
+  <div class="header_back">
+    <div class="header_back_wrap">
+      <p id="scrollTopheader">
+        <span>K</span>
+        <span>uniaki</span>
+      </p>
+    </div>
+  </div>
+
+  <nav id="nav">
+    <div class="navWrap">
+      <!-- linkList and linkMap -->
+      <div class="linkList">
+        <ul>
+          <li id="topLink">Page top</li>
+          <li id="portfolioLink">Portfolio</li>
+          <li id="projectLink">Project</li>
+          <li id="contactLink">Contact</li>
+        </ul>
+        <div class="linkMap" id="linkMap">
+          <span class="linkPointer" id="linkPointer"></span>
+        </div>
+      </div>
+
+      <!-- toggle button -->
+      <div class="toggleBtnWrap">
+        <p>shift dark light theme</p>
+        <label class="switch">
+          <input type="checkbox" id="toggleBtn">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+  </nav>
+
+  <div class="black-back" id="black-back"></div>
+
+
+  <!-- hamburger アイコン -->
+  <header id="menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </header>
+
+
+
+
+  <!-- main--- -->
+  <main>
+
+    <div class="mainWrap">
+
+      <section id="topSec">
+        <div class="top_scroll" id="top_scroll_next">
+          scroll
+        </div>
+
+        <div class="top_prof" id="toTheKuniaki">
+          <h2>Tanaka Kuniaki</h2>
+          <p>webデザイン、コーディングを学習中</p>
+          <ul>
+            <h3>LINKS</h3>
+            <li id="topLinkToPortfolio">
+              <span class="top_prof_num">01.</span>
+              Portfolio - 練習作品
+            </li>
+            <li id="topLinkToProject">
+              <span class="top_prof_num">02.</span>
+              Project - 卒業制作
+            </li>
+            <li id="topLinkToContact">
+              <span class="top_prof_num">03.</span>
+              Contact - 連絡情報
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- 区切り -->
+      <div class="partition"></div>
+
+      <section id="portfolioSec">
+        <div class="portfolioWrap">
+          <h2 class="secHead">
+            <span>01.</span>
+            <span>Portfolio - 練習作品</span>
+          </h2>
+
+          <div class="portfolio_galleryWrap">
+            <!-- href="./galleryDesign.html" -->
+            <a class="portfolio_design" id="portfolio_design">
+              <img src="./images/designFirst.png" alt="デザイン作品ギャラリー">
+              <span>webサイトデザイン</span>
+            </a>
+
+            <!-- href="./galleryAddobe.html" -->
+            <a class="portfolio_addobe" id="portfolio_addobe">
+              <img src="./images/addobeFirst.png" alt="addobe作品ギャラリー">
+              <span>Addobeソフト練習</span>
+            </a>
+          </div>
+
+
+
+
+        </div>
+      </section>
+
+      <!-- 区切り -->
+      <div class="partition"></div>
+
+
+      <section id="projectSec">
+
+
+        <div class="project_detail">
+          <h2 class="secHead">
+            <span>02.</span>
+            <span>Project - 卒業制作</span>
+          </h2>
+
+          <div class="project_slide">
+            <!-- 左右矢印 -->
+            <span id="slideLeft"></span>
+            <span id="slideRight"></span>
+
+            <div id="project_scrollZone">
+              <img src="./images/dPoolscroll.jpg" alt="デザインプールデザインカンプ">
+            </div>
+
+          </div>
+
+          <p>企業とデザイナーを繋ぐデザイン投稿webアプリをReact,Expressを用いて制作しました</p>
+          <a href="https://github.com/kunio-sun/app-design-pool" target="_blank" class="button">Git hub ソースを覗く</a>
+
+          <img src="./images/designPool.png" alt="design pool logo" class="project_logo">
+        </div>
+
+      </section>
+
+      <!-- 区切り -->
+      <div class="partition"></div>
+
+      <section id="contactSec">
+        <h2 class="secHead">
+          <span>03.</span>
+          <span>Contact - 連絡情報</span>
+        </h2>
+
+        <div class="contact_mail">
+          <p class="mailIcon"></p>
+          <p class="contact_address">kuni1100001@gmail.com</p>
+
+          <a href="mailto:kuni1100001@gmail.com" class="button">メール起動</a>
+        </div>
+
+        <div class="contact_share">
+          <p>Share this site</p>
+          <div class="share_button_wrap">
+
+            <!-- faceboox -->
+            <a class="share_button"
+              href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');"></a>
+            <!-- twitter -->
+            <a class="share_button"
+              href="javascript:window.open('http://twitter.com/share?text='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');"></a>
+            <!-- line -->
+            <a class="share_button"
+              href="javascript:window.open('http://line.me/R/msg/text/?'+encodeURIComponent(document.title)+'%20'+encodeURIComponent(location.href),'sharewindow','width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=!');"></a>
+
+          </div>
+        </div>
+
+
+      </section>
+
+
+
+    </div>
+  </main>
+
+  <footer>
+    <p id="scrollTop">scrollTop</p>
+    <div class="copyRight">
+      <p>2021 &copy; kuniaki</p>
+    </div>
+  </footer>
+
+  <script src="./js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #eee;
+        stroke-width: 0.3px;
+      }
+    </style>
+  </defs>
+  <g id="facebook_d" transform="translate(-2181 -969)">
+    <path id="facebook_d-2" data-name="facebook_d" class="cls-1" d="M2985.325,3645.585h0v-2.633h3.072v-3.305s.241-3.537,3.013-3.513,3.39,0,3.39,0v2.432s-4.054-.973-4.174.824v3.562h4.174l-1.125,2.633h-3.048v8.238H2988.4v-8.238Z" transform="translate(-789 -2656)"/>
+    <circle id="facebook" class="cls-2" cx="20" cy="20" r="20" transform="translate(2181 969)"/>
+  </g>
+</svg>

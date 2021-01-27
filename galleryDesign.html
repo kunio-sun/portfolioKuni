@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KuniakiPortfolio</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/gallery.css">
+</head>
+
+<body>
+  <!-- アクセス時circle -->
+  <div id="landing-circle">
+    <p>
+      <span>L</span>
+      <span>O</span>
+      <span>A</span>
+      <span>D</span>
+      <span>I</span>
+      <span>N</span>
+      <span>G</span>
+    </p>
+  </div>
+
+  <div id="gallery-description">
+    <p>
+      右にスクロールするにつれて作成日が直近の物になります
+      <a href="./portfolio.zip" download="練習作品(portfolio).zip" class="portfolio_zip">詳細圧縮フォルダダウンロード</a>
+    </p>
+
+
+    <span id="gallery-close"></span>
+  </div>
+
+
+  <div id="slideLeft">
+    <img src="./images/icon/arrow_d.svg" alt="矢印">
+  </div>
+  <div id="slideRight">
+    <img src="./images/icon/arrow_d.svg" alt="矢印">
+  </div>
+
+  <div id="gallery_scrollZone">
+    <img src="./images/galleryDesign.jpg" alt="ギャラリー画像">
+  </div>
+
+  <script>
+    window.onload = () => {
+      setTimeout(() => {
+        const loading = document.getElementById("landing-circle")
+        loading.style.transform = "translate(-50%, -50%) scale(0,0)"
+
+      }, 1000);
+    }
+
+    const scrollZone = document.getElementById("gallery_scrollZone")
+    document.getElementById("slideRight").addEventListener('click', () => {
+      const nowScrollLeft = scrollZone.scrollLeft;
+      const elementWidth = scrollZone.clientWidth;
+      scrollZone.scrollTo({
+        left: nowScrollLeft + elementWidth,
+        behavior: "smooth"
+      })
+    })
+    document.getElementById("slideLeft").addEventListener('click', () => {
+      const nowScrollLeft = scrollZone.scrollLeft;
+      const elementWidth = scrollZone.clientWidth;
+      scrollZone.scrollTo({
+        left: nowScrollLeft - elementWidth,
+        behavior: "smooth"
+      })
+    })
+
+    document.getElementById('gallery-close').addEventListener('click', () => {
+      document.getElementById('gallery-description').style.transform = "translate(0,200%)"
+    })
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #eee;
+        stroke-width: 0.3px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-linecap: round;
+      }
+
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+
+      .cls-4 {
+        opacity: 0.4;
+      }
+    </style>
+  </defs>
+  <g id="line_d" transform="translate(-1008 -4287)">
+    <g id="LINE" transform="translate(1 1)">
+      <path id="L" class="cls-1" d="M3118.857,3641.542v4.349h2.248" transform="translate(-2097 661.386)"/>
+      <path id="I" class="cls-2" d="M3122.253,3641.542v4.542" transform="translate(-2097 661.386)"/>
+      <path id="N" class="cls-1" d="M3123.905,3646.105v-4.542l1.83,4.542v-4.542" transform="translate(-2097 661.365)"/>
+      <g id="E" transform="translate(0 0.365)">
+        <path id="パス_12" data-name="パス 12" class="cls-1" d="M3129.427,3641.563h-2.393l.118,4.349h2.275" transform="translate(-2097 661)"/>
+        <path id="パス_13" data-name="パス 13" class="cls-2" d="M3127.035,3643.91h2.055" transform="translate(-2096.764 660.663)"/>
+      </g>
+    </g>
+    <path id="パス_14" data-name="パス 14" class="cls-3" d="M3114.879,3644.56c-.315-2.371.839-6.38,6.858-7.64,5.444-1.276,10.571,2.25,10.95,6.392s-5.15,7.581-5.15,7.581l-3.606,2.883v-2.883S3115.414,3650.981,3114.879,3644.56Z" transform="translate(-2096 662)"/>
+    <circle id="line-2" data-name="line" class="cls-4" cx="20" cy="20" r="20" transform="translate(1008 4287)"/>
+  </g>
+</svg>
