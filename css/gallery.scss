@@ -182,7 +182,7 @@ body {
   }
 }
 #gallery_scrollZone {
-  height: 100vh;
+  height: 80vh;
   max-height: 960px;
   overflow-y: scroll;
   -ms-overflow-style: none; /* IE and Edge */
@@ -191,7 +191,7 @@ body {
     display: none;
   }
   img {
-    height: 100vh;
+    height: 100%;
     max-height: 960px;
     //隙間解消
     vertical-align: top;

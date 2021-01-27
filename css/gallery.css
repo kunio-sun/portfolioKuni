@@ -279,7 +279,7 @@ body {
 }
 
 #gallery_scrollZone {
-  height: 100vh;
+  height: 80vh;
   max-height: 960px;
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -293,7 +293,7 @@ body {
 }
 
 #gallery_scrollZone img {
-  height: 100vh;
+  height: 100%;
   max-height: 960px;
   vertical-align: top;
 }
