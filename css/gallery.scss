@@ -23,7 +23,7 @@ body {
     color: #333;
     letter-spacing: 0.8rem;
     font-size: 25px;
-    animation: 0.8s ease-in-out loading;
+    animation: 0.4s ease-in-out loading;
     & span {
       display: inline-block;
       animation: loadingText 1s infinite alternate;
@@ -62,6 +62,36 @@ body {
   }
   100% {
     transform: scale(0.7);
+  }
+}
+
+.backHome{
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-left: 80px solid #555;
+  border-bottom: 80px solid transparent;
+  transition: opacity .3s;
+  &:hover{
+    opacity: .7;
+  }
+
+  &::before{
+    content: "back";
+    position: fixed;
+    text-align: center;
+    transform: rotate(-45deg);
+    left: 2px;
+    top: 16px;
+    font-size: 20px;
+    color: white;
+  }
+  &::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
   }
 }
 

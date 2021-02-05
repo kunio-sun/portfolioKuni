@@ -23,12 +23,13 @@
     </p>
   </div>
 
+  <a href="./index.html" class="backHome"></a>
+
   <div id="gallery-description">
     <p>
       右スクロールするにつれて作成日が最新の物になります
       <a href="./portfolio.zip" download="KuniakiPortfolio.zip">詳細圧縮ファイルダウンロード</a>
     </p>
-
 
     <span id="gallery-close"></span>
   </div>
@@ -47,8 +48,12 @@
 
   <script>
     window.onload = () => {
+
+      setTimeout(() => {
       const loading = document.getElementById("landing-circle")
       loading.style.transform = "translate(-50%, -50%) scale(0,0)"
+        
+      }, 500);
 
     }
 
