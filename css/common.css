@@ -572,6 +572,11 @@ main .mainWrap #portfolioSec .portfolioWrap .portfolio_galleryWrap a span {
   padding: 0 4px 6px 0;
 }
 
+main .mainWrap #projectSec {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 main .mainWrap #projectSec .project_detail {
   position: relative;
   text-align: right;
@@ -581,66 +586,23 @@ main .mainWrap #projectSec .project_detail .secHead {
   margin: 0 0 0 auto;
 }
 
-main .mainWrap #projectSec .project_detail .project_slide {
+main .mainWrap #projectSec .project_detail .project_movie {
   position: relative;
-  margin-bottom: 60px;
+  margin: 0 auto 32px;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 6px #ddd;
+          box-shadow: 2px 2px 6px #ddd;
 }
 
-main .mainWrap #projectSec .project_detail .project_slide > span {
+main .mainWrap #projectSec .project_detail .project_movie iframe {
   position: absolute;
-  top: 50%;
-  display: block;
-  height: 40px;
-  width: 40px;
-  background-image: url(../images/icon/arrow.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-}
-
-main .mainWrap #projectSec .project_detail .project_slide #slideLeft {
+  top: 0;
   left: 0;
-  -webkit-transform: translate(-120%, -50%) rotate(90deg);
-          transform: translate(-120%, -50%) rotate(90deg);
-}
-
-main .mainWrap #projectSec .project_detail .project_slide #slideLeft:hover {
-  -webkit-transform: translate(-120%, -50%) rotate(90deg) scale(0.8, 0.8);
-          transform: translate(-120%, -50%) rotate(90deg) scale(0.8, 0.8);
-}
-
-main .mainWrap #projectSec .project_detail .project_slide #slideRight {
-  right: 0;
-  -webkit-transform: translate(120%, -50%) rotate(-90deg);
-          transform: translate(120%, -50%) rotate(-90deg);
-}
-
-main .mainWrap #projectSec .project_detail .project_slide #slideRight:hover {
-  -webkit-transform: translate(120%, -50%) rotate(-90deg) scale(0.8, 0.8);
-          transform: translate(120%, -50%) rotate(-90deg) scale(0.8, 0.8);
-}
-
-main .mainWrap #projectSec .project_detail .project_slide #project_scrollZone {
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-  height: 30vh;
-}
-
-main .mainWrap #projectSec .project_detail .project_slide #project_scrollZone::-webkit-scrollbar {
-  display: none;
-}
-
-main .mainWrap #projectSec .project_detail .project_slide #project_scrollZone img {
+  width: 100%;
   height: 100%;
-  vertical-align: top;
-  /* 隙間解消 */
 }
 
 main .mainWrap #projectSec .project_detail p {
@@ -648,15 +610,15 @@ main .mainWrap #projectSec .project_detail p {
 }
 
 main .mainWrap #projectSec .project_detail .button {
-  margin: 16px 0 0 auto;
+  margin: 20px 0 0 auto;
 }
 
 main .mainWrap #projectSec .project_detail .project_logo {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 4px;
   width: 18vw;
-  max-width: 240px;
+  max-width: 140px;
   opacity: 0.4;
 }
 
@@ -1346,8 +1308,9 @@ body {
   background: linear-gradient(90deg, rgba(228, 228, 228, 0) 0%, #1e8613 90%);
 }
 
-.dark-theme main .mainWrap #projectSec .project_detail .project_slide > span {
-  background-image: url(../images/icon/arrow_d.svg);
+.dark-theme main .mainWrap #projectSec .project_movie {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .dark-theme main .mainWrap #contactSec .contact_mail .mailIcon {

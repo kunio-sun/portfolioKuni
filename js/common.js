@@ -229,22 +229,3 @@ document.getElementById("portfolio_addobe").addEventListener('click', () => {
 })
 
 
-
-// 02projectSec-卒業制作 horizon scroll
-const scrollZone = document.getElementById("project_scrollZone")
-document.getElementById("slideRight").addEventListener('click', () => {
-  const nowScrollLeft = scrollZone.scrollLeft;
-  const elementWidth = scrollZone.clientWidth;
-  scrollZone.scrollTo({
-    left: nowScrollLeft + elementWidth,
-    behavior: "smooth"
-  })
-})
-document.getElementById("slideLeft").addEventListener('click', () => {
-  const nowScrollLeft = scrollZone.scrollLeft;
-  const elementWidth = scrollZone.clientWidth;
-  scrollZone.scrollTo({
-    left: nowScrollLeft - elementWidth,
-    behavior: "smooth"
-  })
-})

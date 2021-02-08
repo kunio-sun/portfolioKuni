@@ -483,68 +483,44 @@ main {
 
     // 02.ProjectSec - 卒業制作
     & #projectSec {
+      max-width: 800px;
+      margin: 0 auto;
       & .project_detail {
         position: relative;
         text-align: right;
         & .secHead {
           margin: 0 0 0 auto;
         }
-        & .project_slide {
-          position: relative;
-          margin-bottom: 60px;
-          & > span {
-            position: absolute;
-            top: 50%;
-            display: block;
-            height: 40px;
-            width: 40px;
-            background-image: url(../images/icon/arrow.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
-            cursor: pointer;
-            transition: transform 0.2s ease-in-out;
-          }
-          & #slideLeft {
-            left: 0;
-            transform: translate(-120%, -50%) rotate(90deg);
-            &:hover {
-              transform: translate(-120%, -50%) rotate(90deg) scale(0.8, 0.8);
-            }
-          }
-          & #slideRight {
-            right: 0;
-            transform: translate(120%, -50%) rotate(-90deg);
-            &:hover {
-              transform: translate(120%, -50%) rotate(-90deg) scale(0.8, 0.8);
-            }
-          }
 
-          & #project_scrollZone {
-            overflow-x: scroll;
-            -ms-overflow-style: none; /* IE and Edge */
-            scrollbar-width: none; /* Firefox */
-            &::-webkit-scrollbar {
-              display: none;
-            }
-            height: 30vh;
-            & img {
-              height: 100%;
-              vertical-align: top; /* 隙間解消 */
-            }
+        & .project_movie {
+          position: relative;
+          margin: 0 auto 32px;
+          padding-bottom: 56.25%;
+          padding-top: 25px;
+          height: 0;
+          overflow: hidden;
+          box-shadow: 2px 2px 6px #ddd;
+          & iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
           }
-        } // end project slide
+        }
+
         & p {
           font-size: 1.4rem;
         }
         & .button {
-          margin: 16px 0 0 auto;
+          margin: 20px 0 0 auto;
         }
         & .project_logo {
           position: absolute;
           left: 0;
-          bottom: 0;
+          bottom: 4px;
           width: 18vw;
-          max-width: 240px;
+          max-width: 140px;
           opacity: 0.4;
         }
         @include mq-down("500") {
@@ -1165,12 +1141,8 @@ $d-accent: #1e8613;
 
       // 02 projectSec
       & #projectSec {
-        & .project_detail {
-          & .project_slide {
-            & > span {
-              background-image: url(../images/icon/arrow_d.svg);
-            }
-          }
+        & .project_movie {
+          box-shadow: none;
         }
       }
 
