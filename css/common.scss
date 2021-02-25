@@ -279,15 +279,37 @@ $screenMargin-tb: 3vh;
   }
 }
 main {
+  position: relative;
   overflow: hidden;
-  margin: 80px 0 0;
-  padding: 0 140px;
+  margin: 0px 0 0;
+  padding: 80px 140px 0;
   font-size: 1.6rem;
   line-height: 1.5;
   // background-color: #abc;
   @include mq-down("800") {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  & .TopHeaderParson {
+    position: absolute;
+    right: 0;
+    top: 50vh;
+    transform: translate(8%, -50%);
+    width: 50%;
+
+    max-width: 920px;
+    background-size: cover;
+    opacity: 0.2;
+
+    @include mq-down("600") {
+      opacity: 0.4;
+      width: 95%;
+    }
+
+    & img {
+      width: 100%;
+    }
   }
   & .mainWrap {
     max-width: 1100px;
