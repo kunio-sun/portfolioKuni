@@ -65,6 +65,18 @@ info.addEventListener('click', () => {
   }, 300);
 });
 
+let closePosiID;
+info.addEventListener('mousemove', (e) => {
+  clearTimeout(closePosiID);
+  closePosiID = setTimeout(() => {
+
+    const infoClose = document.getElementById('infoClose');
+    infoClose.style.left = e.clientX + "px";
+    infoClose.style.top = e.clientY + "px";
+  }, 25);
+})
+
+
 // 各セクション上からの距離(初期)
 let topSec = document.getElementById('topSec').getBoundingClientRect().y + window.pageYOffset
 let portfolioSec = document.getElementById('portfolioSec').getBoundingClientRect().y + window.pageYOffset

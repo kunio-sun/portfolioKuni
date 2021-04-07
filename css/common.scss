@@ -123,6 +123,17 @@ $screenMargin-tb: 3vh;
   text-align: center;
   cursor: pointer;
   transition: opacity 0.3s;
+  & #infoClose {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    display: inline-block;
+    transform: translate(-50%, 20%);
+    font-size: 1.6rem;
+    opacity: 0.8;
+    animation: 1s ease-in 0s infinite alternate opacityTransition;
+    transition: left 0.3s, top 0.3s;
+  }
   & h2 {
     margin-bottom: 20px;
     font-size: 2rem;
@@ -130,6 +141,17 @@ $screenMargin-tb: 3vh;
   & p {
     margin-bottom: 32px;
     line-height: 1.6;
+  }
+  & .button {
+    opacity: 1;
+  }
+}
+@keyframes opacityTransition {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.1;
   }
 }
 
