@@ -103,9 +103,9 @@ body {
   left: -100%;
   top: 0;
   display: inline-block;
-  -webkit-transform: translate(-50%, 20%);
-          transform: translate(-50%, 20%);
-  font-size: 1.6rem;
+  -webkit-transform: translate(-50%, 130%);
+          transform: translate(-50%, 130%);
+  font-size: 1.7rem;
   opacity: 0.8;
   -webkit-animation: 1s ease-in 0s infinite alternate opacityTransition;
           animation: 1s ease-in 0s infinite alternate opacityTransition;
