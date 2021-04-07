@@ -105,6 +105,34 @@ body {
 $screenMargin-lr: 3vw;
 $screenMargin-tb: 3vh;
 // 共有--
+// 移行情報
+#info {
+  position: fixed;
+  z-index: 100000000;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 16px;
+  width: 100%;
+  background-color: rgba(#000, 0.6);
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  & h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  & p {
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+}
+
 // 数字見出し
 .secHead {
   position: relative;

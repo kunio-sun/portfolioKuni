@@ -53,7 +53,17 @@ menu.addEventListener("click", () => {
 })
 blackBack.addEventListener("click", () => {
   menuShowClose();
-})
+});
+
+//お知らせ消去
+const info = document.getElementById('info');
+info.addEventListener('click', () => {
+  info.style.opacity = 0;
+  setTimeout(() => {
+    console.log("do")
+    info.style.display = 'none';
+  }, 300);
+});
 
 // 各セクション上からの距離(初期)
 let topSec = document.getElementById('topSec').getBoundingClientRect().y + window.pageYOffset
