@@ -113,9 +113,9 @@ $screenMargin-tb: 3vh;
   bottom: 0;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 20px 16px;
   width: 100%;
   background-color: rgba(#000, 0.6);
   color: white;
@@ -135,10 +135,12 @@ $screenMargin-tb: 3vh;
     transition: left 0.3s, top 0.3s;
   }
   & h2 {
+    width: 90vw;
     margin-bottom: 20px;
     font-size: 2rem;
   }
   & p {
+    width: 90vw;
     margin-bottom: 32px;
     line-height: 1.6;
   }
