@@ -26,13 +26,13 @@ const toggle = document.getElementById('toggleBtn');
 toggle.addEventListener("change", () => {
   // ダークモード
   if (toggle.checked == true) {
-    console.log("ダークに切り替え");
+    // console.log("ダークに切り替え");
     document.body.classList.remove("light-theme");
     document.body.classList.add("dark-theme");
     return
   }
   // ライトモード
-  console.log("ライトに切り替え")
+  // console.log("ライトに切り替え")
   document.body.classList.remove("dark-theme");
   document.body.classList.add("light-theme");
 })
@@ -60,7 +60,6 @@ const info = document.getElementById('info');
 info.addEventListener('click', () => {
   info.style.opacity = 0;
   setTimeout(() => {
-    console.log("do")
     info.style.display = 'none';
   }, 300);
 });
@@ -82,7 +81,7 @@ let topSec = document.getElementById('topSec').getBoundingClientRect().y + windo
 let portfolioSec = document.getElementById('portfolioSec').getBoundingClientRect().y + window.pageYOffset
 let projectSec = document.getElementById('projectSec').getBoundingClientRect().y + window.pageYOffset
 let contactSec = document.getElementById('contactSec').getBoundingClientRect().y + window.pageYOffset
-console.log(topSec, portfolioSec, projectSec, contactSec)
+// console.log(topSec, portfolioSec, projectSec, contactSec)
 
 // ウィンドウサイズ変更時距離を再代入
 let timeoutID;
@@ -100,7 +99,7 @@ window.addEventListener('resize', () => {
     portfolioSec = document.getElementById('portfolioSec').getBoundingClientRect().y + window.pageYOffset
     projectSec = document.getElementById('projectSec').getBoundingClientRect().y + window.pageYOffset
     contactSec = document.getElementById('contactSec').getBoundingClientRect().y + window.pageYOffset
-    console.log(topSec, portfolioSec, projectSec, contactSec)
+    // console.log(topSec, portfolioSec, projectSec, contactSec)
   }, 300)
 })
 
@@ -110,10 +109,10 @@ let scrollY;
 window.addEventListener('scroll', () => {
   scrollY = window.scrollY
   const linkPointer = document.getElementById("linkPointer");
-  console.log("いま", scrollY)
-  console.log("ポートフォリオ", portfolioSec)
-  console.log("プロジェクト", projectSec)
-  console.log("コンタクト", contactSec)
+  // console.log("いま", scrollY)
+  // console.log("ポートフォリオ", portfolioSec)
+  // console.log("プロジェクト", projectSec)
+  // console.log("コンタクト", contactSec)
   // focus トップ（プロフィール）セクション
   if (scrollY < portfolioSec) {
     linkPointer.style.top = 0;
@@ -175,7 +174,7 @@ scrollTop.addEventListener('click', () => {
 const topScrollNext = document.getElementById("top_scroll_next");
 topScrollNext.addEventListener('click', () => {
   const windowHeight = window.innerHeight;
-  console.log(windowHeight)
+  // console.log(windowHeight)
   window.scrollTo({
     top: windowHeight,
     behavior: "smooth"

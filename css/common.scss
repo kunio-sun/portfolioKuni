@@ -134,6 +134,39 @@ $screenMargin-tb: 3vh;
     animation: 1s ease-in 0s infinite alternate opacityTransition;
     transition: left 0.3s, top 0.3s;
   }
+  .closeIcon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 40px;
+    text-align: right;
+    align-self: center;
+    opacity: 0.4;
+    .closeLine {
+      display: block;
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      &:nth-child(odd) {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+      &:nth-child(even) {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+    p {
+      position: absolute;
+      left: 0;
+      line-height: 20px;
+      top: 100%;
+      text-align: center;
+      width: 100%;
+    }
+  }
   & h2 {
     width: 90vw;
     margin-bottom: 20px;
