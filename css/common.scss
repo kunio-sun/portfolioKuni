@@ -106,9 +106,9 @@ $screenMargin-lr: 3vw;
 $screenMargin-tb: 3vh;
 // 共有--
 // 移行情報
-#info {
+.info {
   position: fixed;
-  z-index: 100000000;
+  z-index: 10;
   top: 0;
   bottom: 0;
   display: flex;
@@ -122,8 +122,24 @@ $screenMargin-tb: 3vh;
   font-size: 1.6rem;
   text-align: center;
   cursor: pointer;
-  transition: opacity 0.3s;
-  & #infoClose {
+  transition: opacity 0.3s, transform 0.3s;
+  &:hover::before {
+    opacity: 0.7;
+  }
+  &::before {
+    content: "NEWS OPEN";
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 8px 24px;
+    transform: translateY(-100%);
+    background-color: rgb(185, 182, 222);
+    transition: opacity 0.3s;
+  }
+  &-hide {
+    transform: translateY(100%);
+  }
+  & .infoClose {
     position: absolute;
     left: -100%;
     top: 0;

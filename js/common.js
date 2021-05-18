@@ -1,13 +1,17 @@
 const loading = document.getElementById('loading');
+const info = document.querySelector('.info');
+
 window.onload = () => {
   window.setTimeout(() => {
     loading.style.opacity = 0;
   }, 500)
   window.setTimeout(() => {
+    info.classList.add('info-hide')
     loading.style.display = "none";
   }, 1300)
-
 }
+
+
 
 const toggle = document.getElementById('toggleBtn');
 // // 訪問者PCのテーマ検知---
@@ -56,12 +60,8 @@ blackBack.addEventListener("click", () => {
 });
 
 //お知らせ消去
-const info = document.getElementById('info');
 info.addEventListener('click', () => {
-  info.style.opacity = 0;
-  setTimeout(() => {
-    info.style.display = 'none';
-  }, 300);
+  info.classList.toggle('info-hide');
 });
 
 let closePosiID;
@@ -69,7 +69,7 @@ info.addEventListener('mousemove', (e) => {
   clearTimeout(closePosiID);
   closePosiID = setTimeout(() => {
 
-    const infoClose = document.getElementById('infoClose');
+    const infoClose = document.querySelector('.infoClose');
     infoClose.style.left = e.clientX + "px";
     infoClose.style.top = e.clientY + "px";
   }, 25);
