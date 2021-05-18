@@ -46,13 +46,14 @@
     <img src="./images/galleryDesign.jpg" alt="ギャラリー画像">
   </div>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=smoothscroll"></script>
   <script>
     window.onload = () => {
 
       setTimeout(() => {
-      const loading = document.getElementById("landing-circle")
-      loading.style.transform = "translate(-50%, -50%) scale(0,0)"
-        
+        const loading = document.getElementById("landing-circle")
+        loading.style.transform = "translate(-50%, -50%) scale(0,0)"
+
       }, 500);
 
     }
