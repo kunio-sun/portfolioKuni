@@ -1407,6 +1407,10 @@ body {
           box-shadow: 0px 0px 6px #1e8613;
 }
 
+.dark-theme .info::before {
+  background-color: #1e8613;
+}
+
 .dark-theme .secHead span:nth-child(1) {
   color: #555;
 }

@@ -234,19 +234,19 @@ topLinkToContact.addEventListener('click', () => {
 
 
 // 01portfolioSec-練習作品 画面遷移サークルー
-const transition = (goTo) => {
-  const cirlce = document.getElementById("transition-circle");
-  cirlce.style.transform = "translate(-50%, -50%) scale(1, 1)";
-  setTimeout(() => {
-    location.href = goTo;
-  }, 1000);
-}
+// const transition = (goTo) => {
+//   const cirlce = document.getElementById("transition-circle");
+//   cirlce.style.transform = "translate(-50%, -50%) scale(1, 1)";
+//   setTimeout(() => {
+//     location.href = goTo;
+//   }, 1000);
+// }
 
-document.getElementById("portfolio_design").addEventListener('click', () => {
-  transition("./galleryDesign.html");
-})
-document.getElementById("portfolio_addobe").addEventListener('click', () => {
-  transition("./galleryAddobe.html");
-})
+// document.getElementById("portfolio_design").addEventListener('click', () => {
+//   transition("./galleryDesign.html");
+// })
+// document.getElementById("portfolio_addobe").addEventListener('click', () => {
+//   transition("./galleryAddobe.html");
+// })
 
 
